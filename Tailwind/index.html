@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button on Border Example</title>
+    <style>
+        /* Style for the container */
+        .container {
+            width: 300px;
+            height: 200px;
+            border: 2px solid black;
+            position: relative; /* Reference for button positioning */
+            margin: 50px;
+        }
+
+        /* Style for the button */
+        .button-on-border {
+            position: absolute; /* Allow absolute positioning */
+            top: -15px; /* Move the button upward to overlap the top border */
+            right: -15px; /* Move the button outward to overlap the right border */
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <button class="button-on-border">Click Me</button>
+    </div>
+
+</body>
+</html>
